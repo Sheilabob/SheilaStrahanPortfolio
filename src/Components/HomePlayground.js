@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ProfilePic } from '../Styles/mainPicStyle.styles';
 
 const ballStyle = {
     display: 'block',
     width: '3rem',
     height: '3rem',
-    background: 'green',
+    background: '#ACF6FA',
     borderRadius: '1.5rem',
-    boxShadow: '-3px 5px lightGreen'
+    boxShadow: '-3px 5px lightBlue'
 }
 
 const bounceTransition = {
+    // this can add some random direction by making the durations not match
     y: {
+      duration: 0.6,
+      yoyo: Infinity,
+      ease: "easeOut",
+    },
+    x: {
       duration: 0.6,
       yoyo: Infinity,
       ease: "easeOut",
@@ -52,8 +59,10 @@ export default function HomePlayground() {
           style={ballStyle}
           transition={bounce && bounceTransition}
           animate={bounce && {
-            y: ["300%", "-100%"],
-            backgroundColor: "red", boxShadow: '-5px 10px pink'
+            // this is where we mess with direction
+            y: ["100%", "-100%"],
+            x: ["-100%", "100%"],
+            backgroundColor: "#0043C9", boxShadow: '-5px 10px lightBlue'
 
                     }}
           />
@@ -92,7 +101,8 @@ export default function HomePlayground() {
               {animatedBall()}
               {playNote(loops)}
             </div>
-            <img src="../assets/images/MsSheilaRingArch.jpg" />
+            <ProfilePic src="../assets/images/MsSheilaRingArch.jpg" />
+          
 
        {/* <div onClick={() => setBounce(!bounce)}
       style={{

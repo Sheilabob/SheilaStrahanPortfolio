@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ProfilePic } from '../Styles/mainPicStyle.styles';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const ballStyle = {
-    display: 'block',
-    width: '3rem',
-    height: '3rem',
+    display: 'flex',
+    width: '20px',
+    height: '20px',
     background: '#ACF6FA',
-    borderRadius: '1.5rem',
-    boxShadow: '-3px 5px lightBlue'
+    borderRadius: '10px',
+    // boxShadow: '-3px 5px lightBlue'
 }
 
 const bounceTransition = {
@@ -49,20 +50,17 @@ export default function HomePlayground() {
           height: "4rem",
           outlineColor: "black",
           outlineStyle: "solid",
-          display: "flex",
-          justifyContent: "space-around",
-          margin: "20px",
-          padding: "20px",
+          margin: "25%",
+          padding: "25%"
         }}>
           
           <motion.span 
           style={ballStyle}
           transition={bounce && bounceTransition}
           animate={bounce && {
-            // this is where we mess with direction
             y: ["100%", "-100%"],
             x: ["-100%", "100%"],
-            backgroundColor: "#0043C9", boxShadow: '-5px 10px lightBlue'
+            backgroundColor: "#0043C9", 
 
                     }}
           />
@@ -74,10 +72,8 @@ export default function HomePlayground() {
           height: "4rem",
           outlineColor: "black",
           outlineStyle: "solid",
-          display: "flex",
-          justifyContent: "space-around",
-          margin: "20px",
-          padding: "20px"
+          margin: "25%",
+          padding: "25%"
         }}>
           
           <motion.span 
@@ -89,43 +85,39 @@ export default function HomePlayground() {
     }
 
     return ( 
-        <div >
+        <div className="container">
             <div>
                 <h1>This is where the playground goes.</h1>
             </div>
-            <div onClick={() => {
+            <Container>
+              <Row>
+                <Col className="justify-content-center text-center m-1" style={{outline: 'solid black'}} onClick={() => {
               setBounce(!bounce);
               playMusic(!music);
               setLoops(!loops);
             }}>
               {animatedBall()}
               {playNote(loops)}
-            </div>
+                </Col>
+                <Col onClick={() => {
+              setBounce(!bounce);
+              playMusic(!music);
+              setLoops(!loops);
+            }}>
+              {animatedBall()}
+              {playNote(loops)}
+                </Col>
+                <Col onClick={() => {
+              setBounce(!bounce);
+              playMusic(!music);
+              setLoops(!loops);
+            }}>
+              {animatedBall()}
+              {playNote(loops)}
+                </Col>
+              </Row>
             <ProfilePic src="../assets/images/MsSheilaRingArch.jpg" />
-          
-
-       {/* <div onClick={() => setBounce(!bounce)}
-      style={{
-        width: "4rem",
-        height: "4rem",
-        outlineColor: "black",
-        outlineStyle: "solid",
-        display: "flex",
-        justifyContent: "space-around",
-        margin: "20px",
-        padding: "20px"
-      }}>
-        
-        <motion.span 
-        style={ballStyle}
-        transition={bounce && bounceTransition}
-        animate={bounce && {
-          y: ["100%", "-100%"],
-          backgroundColor: ["green", "red"],
-        }}
-        />
-        
-    </div> */}
+            </Container>
     </div>
    )
 }

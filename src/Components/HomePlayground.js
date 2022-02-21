@@ -38,7 +38,11 @@ export default function HomePlayground() {
     const [bounce, setBounce] = useState(false);
     const [bounce1, setBounce1] = useState(false);
     const [bounce2, setBounce2] = useState(false);
-
+    const [bounce3, setBounce3] = useState(false);
+    const [bounce4, setBounce4] = useState(false);
+    const [bounce5, setBounce5] = useState(false);
+    const [bounce6, setBounce6] = useState(false);
+    const [bounce7, setBounce7] = useState(false);
 
     const [loopsC, setLoopsC] = useState(false);
     const [loopsD, setLoopsD] = useState(false);
@@ -123,7 +127,7 @@ export default function HomePlayground() {
 
     const playHighCNote = () => {
       if (loopsHighC == true) {
-        highCnote.src = "../assets/audio/HighC.mp3";
+        highCnote.src = "../assets/audio/C.mp3";
       } else {
         highCnote.src = ""
       };
@@ -159,8 +163,8 @@ export default function HomePlayground() {
         style={{
           width: "4rem",
           height: "4rem",
-          outlineColor: "black",
-          outlineStyle: "solid",
+          // outlineColor: "black",
+          // outlineStyle: "solid",
           margin: "25%",
           padding: "25%"
         }}>
@@ -181,8 +185,8 @@ export default function HomePlayground() {
         style={{
           width: "4rem",
           height: "4rem",
-          outlineColor: "black",
-          outlineStyle: "solid",
+          // outlineColor: "black",
+          // outlineStyle: "solid",
           margin: "25%",
           padding: "25%"
         }}>
@@ -198,33 +202,75 @@ export default function HomePlayground() {
     return ( 
         <div className="container">
             <div>
-                <h1>This is where the playground goes.</h1>
+                <h1>Click balls for chaos.</h1>
             </div>
             <Container>
               <Row>
-                <Col className="justify-content-center text-center m-1" style={{outline: 'solid black'}} onClick={() => {
-              setBounce1(!bounce1);
+                <Col className="justify-content-center text-center m-1" onClick={() => {
+              setBounce(!bounce);
               setLoopsC(!loopsC);
             }}>
-              {animatedBall(bounce1, "right")}
+              {animatedBall(bounce, "diagLeft")}
               {playCNote()}
                 </Col>
                 <Col onClick={() => {
-              setBounce2(!bounce2);
+              setBounce1(!bounce1);
               setLoopsD(!loopsD);
             }}>
-              {animatedBall(bounce2, "diagLeft")}
+              {animatedBall(bounce1, "up")}
               {playDNote()}
                 </Col>
                 <Col onClick={() => {
-              setBounce(!bounce);
+              setBounce2(!bounce2);
               setLoopsE(!loopsE);
             }}>
-              {animatedBall(bounce, "diagRight")}
+              {animatedBall(bounce2, "diagRight")}
               {playENote()}
                 </Col>
               </Row>
-            <ProfilePic src="../assets/images/MsSheilaRingArch.jpg" />
+              <Row>
+                <Col className="justify-content-center text-center m-1" onClick={() => {
+              setBounce3(!bounce3);
+              setLoopsF(!loopsF);
+            }}>
+              {animatedBall(bounce3, "right")}
+              {playFNote()}
+                </Col>
+                <Col>
+                          <ProfilePic src="../assets/images/MsSheilaRingArch.jpg" />
+
+                </Col>
+                <Col onClick={() => {
+              setBounce4(!bounce4);
+              setLoopsG(!loopsG);
+            }}>
+              {animatedBall(bounce4, "right")}
+              {playGNote()}
+                </Col>
+              </Row>
+              <Row>
+                <Col className="justify-content-center text-center m-1" onClick={() => {
+              setBounce5(!bounce5);
+              setLoopsA(!loopsA);
+            }}>
+              {animatedBall(bounce5, "diagRight")}
+              {playANote()}
+                </Col>
+                <Col onClick={() => {
+              setBounce6(!bounce6);
+              setLoopsB(!loopsB);
+            }}>
+              {animatedBall(bounce6, "up")}
+              {playBNote()}
+                </Col>
+                <Col onClick={() => {
+              setBounce7(!bounce7);
+              setLoopsHighC(!loopsHighC);
+            }}>
+              {animatedBall(bounce7, "diagLeft")}
+              {playHighCNote()}
+                </Col>
+              </Row>
             </Container>
     </div>
    )

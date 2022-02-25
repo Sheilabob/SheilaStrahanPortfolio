@@ -56,7 +56,7 @@ export default function HomePlayground() {
 
 
     const playCNote = () => {
-      if (loopsC == true) {
+      if (loopsC === true) {
         Cnote.src = "../assets/audio/C.mp3";
       } else {
         Cnote.src = ""
@@ -66,7 +66,7 @@ export default function HomePlayground() {
     }
 
     const playDNote = () => {
-      if (loopsD == true) {
+      if (loopsD === true) {
         Dnote.src = "../assets/audio/D.mp3";
       } else {
         Dnote.src = ""
@@ -76,7 +76,7 @@ export default function HomePlayground() {
     }
 
     const playENote = () => {
-      if (loopsE == true) {
+      if (loopsE === true) {
         Enote.src = "../assets/audio/E.mp3";
       } else {
         Enote.src = ""
@@ -86,7 +86,7 @@ export default function HomePlayground() {
     }
 
     const playFNote = () => {
-      if (loopsF == true) {
+      if (loopsF === true) {
         Fnote.src = "../assets/audio/F.mp3";
       } else {
         Fnote.src = ""
@@ -96,7 +96,7 @@ export default function HomePlayground() {
     }
 
     const playGNote = () => {
-      if (loopsG == true) {
+      if (loopsG === true) {
         Gnote.src = "../assets/audio/G.mp3";
       } else {
         Gnote.src = ""
@@ -106,7 +106,7 @@ export default function HomePlayground() {
     }
 
     const playANote = () => {
-      if (loopsA == true) {
+      if (loopsA === true) {
         Anote.src = "../assets/audio/A.mp3";
       } else {
         Anote.src = ""
@@ -116,7 +116,7 @@ export default function HomePlayground() {
     }
 
     const playBNote = () => {
-      if (loopsB == true) {
+      if (loopsB === true) {
         Bnote.src = "../assets/audio/B.mp3";
       } else {
         Bnote.src = ""
@@ -126,7 +126,7 @@ export default function HomePlayground() {
     }
 
     const playHighCNote = () => {
-      if (loopsHighC == true) {
+      if (loopsHighC === true) {
         highCnote.src = "../assets/audio/C.mp3";
       } else {
         highCnote.src = ""
@@ -201,8 +201,10 @@ export default function HomePlayground() {
 
     return ( 
         <div className="container">
-            <div>
-                <h1>Click balls for chaos.</h1>
+            <div className="m-1">
+                <h1>Sheila Strahan</h1>
+                <h2>Full Stack Engineer</h2>
+                <h3>(Click balls for chaos.)</h3>
             </div>
             <Container>
               <Row>

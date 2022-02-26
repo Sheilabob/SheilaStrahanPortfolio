@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 import { ProfilePic } from '../Styles/mainPicStyle.styles';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
 const ballStyle = {
     display: 'flex',
-    width: '40px',
-    height: '40px',
+    width: '35px',
+    height: '35px',
     background: '#ACF6FA',
     borderRadius: '20px',
 }
@@ -206,7 +207,7 @@ export default function HomePlayground() {
             </div>
             <Container>
               <Row>
-                <Col className="justify-content-center text-center m-1" onClick={() => {
+                <Col onClick={() => {
               setBounce(!bounce);
               setLoopsC(!loopsC);
             }}>
@@ -229,7 +230,7 @@ export default function HomePlayground() {
                 </Col>
               </Row>
               <Row>
-                <Col className="justify-content-center text-center m-1" onClick={() => {
+                <Col onClick={() => {
               setBounce3(!bounce3);
               setLoopsF(!loopsF);
             }}>
@@ -249,7 +250,7 @@ export default function HomePlayground() {
                 </Col>
               </Row>
               <Row>
-                <Col className="justify-content-center text-center m-1" onClick={() => {
+                <Col onClick={() => {
               setBounce5(!bounce5);
               setLoopsA(!loopsA);
             }}>

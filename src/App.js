@@ -1,22 +1,26 @@
 import React from 'react';
 import './App.css';
-import HomePlayground from './Components/HomePlayground';
-import ProjectsComponent from './Components/ProjectsComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Components/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './Components/Main';
 import Skills from './Components/Skills';
+import ProjectPage from './Pages/ProjectPage';
+import Header from './Components/Header';
 
 
-function App() {
+export default function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Header />
-        <HomePlayground />
-        <Skills />
-        <ProjectsComponent />
+      <Routes>
+                    <Route path='/home' element= {<Main />} />
+                    <Route exact path ='/skills' element= {<Skills />} />
+                    <Route exact path ='/projects' element= {<ProjectPage />} />
 
+                </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;

@@ -3,37 +3,37 @@
   background-color: #bab6b2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.jumbotron {
+  height: 40vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center; /* or 50% 50% */
+  /* background-repeat: no-repeat;  
+  background-image: url(${kidsImage}); */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.skillsetLabel {
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Projects */
+.project-title {
+  text-align: left;
+  color: navy;
+}
+.project-summary-title {
+  text-align: left;
+  color: purple;
+}
+
+.project-summary-para {
+  text-align: left;
+  font-size: small;
+  color: blue;
+}
+
+.project-link-col {
+  margin-top: 10% !important;
 }

@@ -202,8 +202,6 @@ export default function HomePlayground() {
     return ( 
         <div className="container">
             <div className="m-1">
-                <h1>Sheila Strahan</h1>
-                <h2>Full Stack Engineer</h2>
                 <h3>(Click balls for chaos.)</h3>
             </div>
             <Container>

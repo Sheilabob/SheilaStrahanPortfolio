@@ -22,12 +22,38 @@ export default function ProjectsComponent() {
                         <Col xs lg="5" className="m-1">
                             <a href="https://github.com/Sheilabob/DCMgame">
                             <img src="/assets/images/DCMGameGithub.png" height="120" alt="DCM site"/>
-                                <p>DCM Game Website</p></a>
+                                <p>DCM Game Github Repository</p></a>
                         </Col>
                         <Col xs lg="5" className="m-1">
                             <a href="https://sheilastrahan-portfolio-dcmgame.netlify.app">
                                 <img src="/assets/images/DCMGamePic.png" height="120" alt="DCM site"/>
                                 <p>DCM Game Website</p>
+                            </a>
+                        </Col>
+                        </Row>
+                    </Col>
+                </Row>
+            </Row>
+            <Row className="m-3">
+                <Row className="project-title">                
+                    <h2>Wanda the Whale Game</h2>
+                </Row>
+                <Row>
+                    <Col xs sm="5" className="m-1">
+                    <h5 className="project-summary-title m-1">Summary:</h5>
+                    <p className="project-summary-para m-1">This project was created using only HTML, CSS, and vanilla javascript.  The biggest challenge was adding the ambient background sound, which only loads on the second round due to the fact that new Audio components do not load in modern browsers on page load . . .</p>
+                    </Col>
+                    <Col className="m-1">
+                        <Row className="project-link-col">
+                        <Col xs lg="5" className="m-1">
+                            <a href="https://github.com/Sheilabob/javascriptMatchGame">
+                            <img src="/assets/images/DCMGameGithub.png" height="120" alt="DCM site"/>
+                                <p>Wanda Whale Github Repository</p></a>
+                        </Col>
+                        <Col xs lg="5" className="m-1">
+                            <a href="https://amazing-easley-76d075.netlify.app/">
+                                <img src="/assets/images/wandaWhaleWebsite.png" height="120" alt="Wanda Whale site"/>
+                                <p>Wanda Whale Website</p>
                             </a>
                         </Col>
                         </Row>

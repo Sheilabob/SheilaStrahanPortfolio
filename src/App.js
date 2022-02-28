@@ -6,6 +6,7 @@ import Main from './Components/Main';
 import Skills from './Components/Skills';
 import ProjectPage from './Pages/ProjectPage';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
                     <Route exact path ='/projects' element= {<ProjectPage />} />
 
                 </Routes>
+                <Footer />
       </BrowserRouter>
     </div>
   );

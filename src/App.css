@@ -1,6 +1,18 @@
 .App {
   text-align: center;
-  background-color: #bab6b2;
+  background-color: #cdcdcd;
+}
+
+.header {
+  background-color: #59a695ff;
+}
+
+.headbar {
+  background-color: #4a86bfff;
+}
+
+.site-footer {
+  background-color: #f2c49cff;
 }
 
 .jumbotron {
@@ -37,3 +49,10 @@
 .project-link-col {
   margin-top: 10% !important;
 }
+
+/* CSS HEX */
+/* --peach-crayola: #f2c49cff;
+--polished-pine: #59a695ff;
+--steel-blue: #4a86bfff;
+--kobe: #812e0eff;
+--denim-blue: #2443a8ff; */

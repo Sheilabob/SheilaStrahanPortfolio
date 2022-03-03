@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import { Routes, Route, Redirect } from "react-router-dom";
 import ProjectPage from "../Pages/ProjectPage";
 import Footer from "./Footer";
+import Resume from "./Resume";
 
 export default function Main () {
     return (
@@ -13,6 +14,7 @@ export default function Main () {
             <HomePlayground />
             <Skills />
             <ProjectsComponent />
+            <Resume />
 
             <Routes>
                     <Route path='/home' render={() => <HomePlayground />} />

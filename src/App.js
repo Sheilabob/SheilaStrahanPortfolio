@@ -8,12 +8,12 @@ import ProjectPage from './Pages/ProjectPage';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
-
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Header />
+      <Main />
       <Routes>
                     <Route path='/home' element= {<Main />} />
                     <Route exact path ='/skills' element= {<Skills />} />

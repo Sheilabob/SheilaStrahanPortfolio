@@ -16,13 +16,6 @@ export default function Main () {
             <ProjectsComponent />
             <Resume />
 
-            <Routes>
-                    <Route path='/home' render={() => <HomePlayground />} />
-                    <Route exact path ='/skills' render={() => <Skills />} />
-                    <Route exact path ='/projects' render={() => <ProjectPage />} />
-
-                </Routes>
-
         </>
     )
 }

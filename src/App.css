@@ -1,10 +1,24 @@
 .App {
   text-align: center;
   background-color: #cdcdcd;
+  background-image: radial-gradient(
+    ellipse at bottom,
+    #cdcdcd 35%,
+    #f2c49cff,
+    #59a695ff,
+    #4a86bfff
+  );
 }
 
 .header {
   background-color: #59a695ff;
+  background-image: radial-gradient(
+    ellipse at left,
+    #cdcdcd,
+    #f2c49cff,
+    #59a695ff,
+    #4a86bfff 75%
+  );
 }
 
 .headbar {
@@ -13,6 +27,13 @@
 
 .site-footer {
   background-color: #f2c49cff;
+  background-image: radial-gradient(
+    ellipse at right,
+    #cdcdcd,
+    #f2c49cff 50%,
+    #59a695ff,
+    #4a86bfff
+  );
 }
 
 .jumbotron {
@@ -48,6 +69,11 @@
 
 .project-link-col {
   margin-top: 10% !important;
+}
+
+.stop-button {
+  background-color: #f2c49cff;
+  border-radius: 10px;
 }
 
 /* CSS HEX */

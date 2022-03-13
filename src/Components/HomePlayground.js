@@ -166,8 +166,8 @@ export default function HomePlayground() {
           height: "4rem",
           // outlineColor: "black",
           // outlineStyle: "solid",
-          margin: "25%",
-          padding: "25%"
+          margin: "15%",
+          padding: "15%"
         }}>
           
           <motion.span 
@@ -176,8 +176,7 @@ export default function HomePlayground() {
           animate={bounceNumber && {
             y: [y1, y2],
             x: [x1, x2],
-            backgroundColor: "#0043C9", 
-
+            backgroundColor: "#0043C9"
                     }}
           />
       </div>)
@@ -188,8 +187,8 @@ export default function HomePlayground() {
           height: "4rem",
           // outlineColor: "black",
           // outlineStyle: "solid",
-          margin: "25%",
-          padding: "25%"
+          margin: "15%",
+          padding: "15%"
         }}>
           
           <motion.span 
@@ -204,6 +203,26 @@ export default function HomePlayground() {
         <div className="container">
             <div className="m-1">
                 <h3>(Click balls for chaos.)</h3>
+                <h3>(Click <button onClick={() => {
+              setBounce(false);
+              setBounce1(false);
+              setBounce2(false);
+              setBounce3(false);
+              setBounce4(false);
+              setBounce5(false);
+              setBounce6(false);
+              setBounce7(false);
+              setLoopsC(false);
+              setLoopsD(false);
+              setLoopsE(false);
+              setLoopsF(false);
+              setLoopsG(false);
+              setLoopsA(false);
+              setLoopsB(false);
+              setLoopsHighC(false);
+            }} className="stop-button">
+              here
+              </button> to stop the chaos.)</h3>
             </div>
             <Container>
               <Row>

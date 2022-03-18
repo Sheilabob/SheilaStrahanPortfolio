@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import OKBWebsiteComponent from './OKBWebsiteComponent';
 
 
 export default function ProjectsComponent() {
     return (
         <Container>
             <Row className="m-5">
-                <h1>Projects</h1>
+                <Link to='/projects' style={{textDecoration: 'none'}}><h1>Projects</h1></Link>
             </Row>
             <Row className="m-3">
                 <Row className="project-title">                
@@ -60,6 +62,7 @@ export default function ProjectsComponent() {
                     </Col>
                 </Row>
             </Row>
+            <OKBWebsiteComponent />
         </Container>
     )
 }

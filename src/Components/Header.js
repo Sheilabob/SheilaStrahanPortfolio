@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import HomePlayground from './HomePlayground';
 
 export default function Header() {
 
@@ -12,7 +14,8 @@ export default function Header() {
                         </NavbarBrand>
                         </div>
                 </Navbar> */}
-                <div className="jumbotron header">
+                            <Link to='/' style={{textDecoration: 'none'}}>
+<div className="jumbotron header">
                     <div className="container">
                         <div className="row">
                             <div className="col-8">
@@ -22,7 +25,7 @@ export default function Header() {
                             <div className="col-4"></div>
                         </div>
                     </div>
-                </div>
+                </div></Link>
              </React.Fragment>
         );
 }

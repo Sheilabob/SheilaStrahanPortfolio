@@ -2,11 +2,11 @@
   text-align: center;
   background-color: #cdcdcd;
   background-image: radial-gradient(
-    ellipse at bottom,
+    circle,
     #cdcdcd 35%,
     #f2c49cff,
     #59a695ff,
-    #4a86bfff
+    #4a86bfff 60%
   );
 }
 
@@ -17,7 +17,7 @@
     #cdcdcd,
     #f2c49cff,
     #59a695ff,
-    #4a86bfff 75%
+    #4a86bfff 60%
   );
 }
 
@@ -30,9 +30,9 @@
   background-image: radial-gradient(
     ellipse at right,
     #cdcdcd,
-    #f2c49cff 50%,
+    #f2c49cff,
     #59a695ff,
-    #4a86bfff
+    #4a86bfff 60%
   );
 }
 

@@ -8,7 +8,7 @@ export default function Resume() {
             <Row className="m-5">
                 <h1>Resume</h1>
             </Row>
-            <Row>
+            <Row className="m-5">
                 <Col>
                     <img src="/assets/images/techResume.jpg" height="400" alt="resume"/>
                 </Col>

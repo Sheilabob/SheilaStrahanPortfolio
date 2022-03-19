@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className="site-footer">
             <div className="container">
                 <div className="row">             
-                    <div className="col-4 col-sm-2 offset-1">
+                    <div className="col-4 col-sm-2 offset-1 m-5">
                         <h5>Links</h5>
                         <ul className="list-unstyled">
                             <li><Link to='/home'>Home</Link></li>
@@ -17,7 +17,7 @@ export default function Footer() {
                             <li><Link to='/projects'>Projects</Link></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-sm-3 text-center">
+                    <div className="col-6 col-sm-3 text-center m-5">
                         <h5>Social</h5>
 
                         <a className="social-btn" href="http://twitter.com/" target="_blank">
@@ -31,7 +31,7 @@ export default function Footer() {
                         </a>
                       
                     </div>
-                    <div className="col-sm-4 text-center">
+                    <div className="col-sm-3 text-center m-5">
                         <a role="button" className="btn btn-link" href="tel:+14352592985"><i className="fa fa-phone" /> 1-435-259-2985</a><br />
                         <a role="button" className="btn btn-link" href="mailto:smstrahan@gmail.com"><i className="fa fa-envelope-o" /> smstrahan@gmail.com</a>
 

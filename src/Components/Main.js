@@ -16,6 +16,7 @@ export default function Main () {
             <ProjectsComponent />
             <Link to='/resume' style={{textDecoration: 'none'}}><Resume /></Link>
 
+
         </>
     )
 }

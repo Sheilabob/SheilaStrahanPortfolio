@@ -8,6 +8,7 @@ import ProjectPage from './Pages/ProjectPage';
 import ResumePage from './Pages/ResumePage';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import OKBProjectPage from './Pages/OKBProjectPage';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
                     <Route path='/' element= {<Main />} />
                     <Route exact path ='/skills' element= {<Skills />} />
                     <Route exact path ='/projects' element= {<ProjectPage />} />
+                    <Route exact path ='/projects/okb' element= {<OKBProjectPage />} />
                     <Route exact path ='/resume' element= {<ResumePage />} />
 
 

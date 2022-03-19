@@ -10,9 +10,11 @@ export default function ProjectsComponent() {
             <Row className="m-5">
                 <Link to='/projects' style={{textDecoration: 'none'}}><h1>Projects</h1></Link>
             </Row>
+            <OKBWebsiteComponent />
             <Row className="m-3">
                 <Row className="project-title">                
                     <h2>DCM Game</h2>
+                    <h5>(Front-end: React, plus vanilla JavaScript)</h5>
                 </Row>
                 <Row>
                     <Col xs sm="5" className="m-1">
@@ -39,6 +41,7 @@ export default function ProjectsComponent() {
             <Row className="m-3">
                 <Row className="project-title">                
                     <h2>Wanda the Whale Game</h2>
+                    <h5>(Front-end: Vanilla JavaScript, HTML, CSS)</h5>
                 </Row>
                 <Row>
                     <Col xs sm="5" className="m-1">
@@ -62,7 +65,6 @@ export default function ProjectsComponent() {
                     </Col>
                 </Row>
             </Row>
-            <OKBWebsiteComponent />
         </Container>
     )
 }

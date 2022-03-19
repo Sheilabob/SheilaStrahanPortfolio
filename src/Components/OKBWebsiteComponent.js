@@ -5,13 +5,11 @@ import { Link } from 'react-router-dom';
 
 export default function OKBWebsiteComponent() {
     return (
-        <Container>
-            <Row className="m-5">
-                <h1>OKB Hope Foundation Website</h1>
-            </Row>
+      
             <Row className="m-3">
                 <Row className="project-title">                
                     <h2>OKB Website</h2>
+                    <h5>(Fullstack: React and Strapi)</h5>
                 </Row>
                 <Row>
                     <Col xs sm="5" className="m-1">
@@ -22,11 +20,11 @@ export default function OKBWebsiteComponent() {
                         <Row className="project-link-col">
                         <Col xs lg="5" className="m-1">
                             <a href="https://github.com/pgartrell/okb">
-                            <img src="/assets/images/sampleLandingPageOKB.png" height="120" alt="OKB image"/>
+                            <img src="/assets/images/okbWebScreenshot.png" height="120" alt="OKB image"/>
                                 <p>OKB Hope Github Repository</p></a>
                         </Col>
                         <Col xs lg="5" className="m-1">
-                            <Link to="/projects">
+                            <Link to="/projects/okb">
                                 <img src="/assets/images/sampleLandingPageOKB.png" height="120" alt="DCM site"/>
                                 <p>More Details</p>
                             </Link>
@@ -35,16 +33,6 @@ export default function OKBWebsiteComponent() {
                     </Col>
                 </Row>
             </Row>
-            <Row>
-                <Col>
-                    <h5>Doctor Biography Component Tour, part 1</h5>
-                    <iframe width="350" height="200" src="https://www.youtube.com/embed/l0wIM2EZikM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-                </Col>
-                <Col>
-                    <h5>Doctor Biography Component Tour, part 2</h5>
-                    <iframe width="350" height="200" src="https://www.youtube.com/embed/iJnTjiJIzz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-                </Col>
-            </Row>
-        </Container>
+
     )
 }

@@ -37,6 +37,14 @@ export default function Skills() {
                     <img src="/assets/images/githubLogo.png" height="50" alt="Github"/>
                     <p className="skillsetLabel">Github</p>
                 </Col>
+                <Col>
+                    <img src="/assets/images/nodejs.png" height="50" alt="NodeJs"/>
+                    <p className="skillsetLabel">NodeJS</p>
+                </Col>
+                <Col>
+                    <img src="/assets/images/strapi.jpeg" height="50" alt="Strapi"/>
+                    <p className="skillsetLabel">Strapi</p>
+                </Col>
             </Row>
         </Container>
     )

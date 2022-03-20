@@ -257,7 +257,7 @@ export default function HomePlayground() {
               {playFNote()}
                 </Col>
                 <Col>
-                          <ProfilePic src="../assets/images/MsSheilaRingArch.jpg" />
+                          <ProfilePic src="../assets/images/squareSheilaMaskMusic.jpg" />
 
                 </Col>
                 <Col onClick={() => {

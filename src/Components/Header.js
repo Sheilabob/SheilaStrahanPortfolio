@@ -18,11 +18,11 @@ export default function Header() {
 <div className="jumbotron header">
                     <div className="container">
                         <div className="row">
-                            <div className="col-8">
+                            <div className="col-8 title">
                                 <h1>Sheila Strahan</h1>
                                 <h2>Web Developer</h2>
                             </div>
-                            <div className="col-4"></div>
+                            <div className="col-4"><img src="../assets/images/squareMsSheilaRingArch.jpg" className="header-pic" /></div>
                         </div>
                     </div>
                 </div></Link>

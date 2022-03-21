@@ -1,12 +1,19 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import HtmlCertificate from './HtmlCertificate';
+import BackendCertificate from './BackendCertificate';
+import BootstrapCertificate from './BootstrapCertificate';
+import ReactCertificate from './ReactCertificate';
+import ReactNativeCertificate from './ReactNativeCertificate';
+import BackendNodeCertificate from './BackendNodeCertificate';
 
 
 export default function Skills() {
     return (
         <Container>
             <Row className="m-5">
-                <h1>Skills</h1>
+                <h1>Skills, Tools, and Certifications</h1>
             </Row>
             <Row>
                 <Col>
@@ -45,7 +52,38 @@ export default function Skills() {
                     <img src="/assets/images/strapi.jpeg" height="50" alt="Strapi"/>
                     <p className="skillsetLabel">Strapi</p>
                 </Col>
+                <Col>
+                    <img src="/assets/images/pythonLogo.png" height="50" alt="Python"/>
+                    <p className="skillsetLabel">Python</p>
+                </Col>
             </Row>
+            <Row>
+                <Col>
+                   <HtmlCertificate />
+                   <p className="skillsetLabel">HTML, CSS, and JS Bootcamp</p>
+                </Col>
+                <Col>
+                    <BootstrapCertificate />
+                    <p className="skillsetLabel">Bootstrap Bootcamp</p>
+                </Col>
+                <Col>
+                    <ReactCertificate />
+                    <p className="skillsetLabel">React Bootcamp</p>
+                </Col>
+                <Col>
+                    <ReactNativeCertificate />
+                    <p className="skillsetLabel">React Native Bootcamp</p>
+                </Col>
+                <Col>
+                    <BackendNodeCertificate />
+                    <p className="skillsetLabel">NodeJS, Express, MongoDB Bootcamp</p>
+                </Col>
+                <Col>
+                    <BackendCertificate />
+                    <p className="skillsetLabel">Fullstack Bootcamp</p>
+                </Col>
+            </Row>
+            
         </Container>
     )
 }

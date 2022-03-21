@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import OKBWebsiteComponent from './OKBWebsiteComponent';
+import PythonProjectComponent from './PythonProjectComponent';
 
 
 export default function ProjectsComponent() {
@@ -65,6 +66,7 @@ export default function ProjectsComponent() {
                     </Col>
                 </Row>
             </Row>
+            <PythonProjectComponent />
         </Container>
     )
 }

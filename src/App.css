@@ -47,6 +47,14 @@
   align-items: center;
 }
 
+h1 {
+  color: navy;
+}
+
+h6 {
+  color: purple;
+}
+
 .skillsetLabel {
   font-size: 15px;
 }
@@ -84,6 +92,18 @@
 .header-pic {
   height: 150px;
   border-radius: 100px;
+}
+
+.link {
+  color: navy;
+}
+
+.social-btn {
+  color: navy;
+}
+
+.btn-link {
+  color: navy !important;
 }
 
 /* CSS HEX */

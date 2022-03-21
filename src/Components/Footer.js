@@ -12,21 +12,22 @@ export default function Footer() {
                     <div className="col-4 col-sm-2 offset-1 m-5">
                         <h5>Links</h5>
                         <ul className="list-unstyled">
-                            <li><Link to='/home'>Home</Link></li>
-                            <li><Link to='/skills'>Skills</Link></li>
-                            <li><Link to='/projects'>Projects</Link></li>
+                            <li><Link to='/' className = "link">Home</Link></li>
+                            <li><Link to='/skills' className = "link">Skills</Link></li>
+                            <li><Link to='/projects' className = "link">Projects</Link></li>
+                            <li><Link to='/resume' className = "link">Resume</Link></li>
                         </ul>
                     </div>
                     <div className="col-6 col-sm-3 text-center m-5">
                         <h5>Social</h5>
 
-                        <a className="social-btn" href="http://twitter.com/" target="_blank">
+                        <a className="social-btn m-3" href="https://github.com/Sheilabob" target="_blank">
                             <FontAwesomeIcon icon={faGithub} size="2x"/>
                         </a>
-                        <a className="social-btn" href="http://linkedin.com/" target="_blank">
+                        <a className="social-btn m-3" href="http://www.linkedin.com/in/sheila-strahan-729437226" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} size="2x"/>
                         </a> 
-                        <a className="social-btn" href="mailto:you@yourEmail.com" target="_blank">
+                        <a className="social-btn m-3" href="mailto:smstrahan@gmail.com" target="_blank">
                             <FontAwesomeIcon icon={faEnvelope} size="2x"/>
                         </a>
                       

@@ -202,7 +202,7 @@ export default function HomePlayground() {
     return ( 
         <div className="container">
             <div className="m-1">
-                <h3>(Click balls for chaos.)</h3>
+                <h3>(Click the balls below for music or chaos.)</h3>
                 <h3>(Click <button onClick={() => {
               setBounce(false);
               setBounce1(false);
@@ -257,7 +257,7 @@ export default function HomePlayground() {
               {playFNote()}
                 </Col>
                 <Col>
-                          <ProfilePic src="../assets/images/squareSheilaMaskMusic.jpg" />
+                          <ProfilePic src="../assets/images/squareSheilaCalif.jpg" />
 
                 </Col>
                 <Col onClick={() => {

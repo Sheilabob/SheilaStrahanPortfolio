@@ -9,6 +9,7 @@ import ResumePage from './Pages/ResumePage';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import OKBProjectPage from './Pages/OKBProjectPage';
+import HtmlCertificate from './Components/HtmlCertificate';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
                     <Route exact path ='/projects' element= {<ProjectPage />} />
                     <Route exact path ='/projects/okb' element= {<OKBProjectPage />} />
                     <Route exact path ='/resume' element= {<ResumePage />} />
+
 
 
                 </Routes>

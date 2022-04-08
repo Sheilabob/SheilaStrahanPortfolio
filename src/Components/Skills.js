@@ -17,6 +17,32 @@ export default function Skills() {
             </Row>
             <Row>
                 <Col>
+                   <HtmlCertificate />
+                   <p className="skillsetLabel">HTML, CSS, and JS Bootcamp</p>
+                </Col>
+                <Col>
+                    <BootstrapCertificate />
+                    <p className="skillsetLabel">Bootstrap Bootcamp</p>
+                </Col>
+                <Col>
+                    <ReactCertificate />
+                    <p className="skillsetLabel">React Bootcamp</p>
+                </Col>
+                <Col>
+                    <ReactNativeCertificate />
+                    <p className="skillsetLabel">React Native Bootcamp</p>
+                </Col>
+                <Col>
+                    <BackendNodeCertificate />
+                    <p className="skillsetLabel">NodeJS, Express, MongoDB Bootcamp</p>
+                </Col>
+                <Col>
+                    <BackendCertificate />
+                    <p className="skillsetLabel">Fullstack Bootcamp</p>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
                     <img src="/assets/images/html5logo.png" height="50" alt="HTML 5"/>
                     <p className="skillsetLabel">HTML 5</p>
                 </Col>
@@ -57,32 +83,7 @@ export default function Skills() {
                     <p className="skillsetLabel">Python</p>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                   <HtmlCertificate />
-                   <p className="skillsetLabel">HTML, CSS, and JS Bootcamp</p>
-                </Col>
-                <Col>
-                    <BootstrapCertificate />
-                    <p className="skillsetLabel">Bootstrap Bootcamp</p>
-                </Col>
-                <Col>
-                    <ReactCertificate />
-                    <p className="skillsetLabel">React Bootcamp</p>
-                </Col>
-                <Col>
-                    <ReactNativeCertificate />
-                    <p className="skillsetLabel">React Native Bootcamp</p>
-                </Col>
-                <Col>
-                    <BackendNodeCertificate />
-                    <p className="skillsetLabel">NodeJS, Express, MongoDB Bootcamp</p>
-                </Col>
-                <Col>
-                    <BackendCertificate />
-                    <p className="skillsetLabel">Fullstack Bootcamp</p>
-                </Col>
-            </Row>
+
             
         </Container>
     )

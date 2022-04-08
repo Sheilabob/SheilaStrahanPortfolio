@@ -14,8 +14,8 @@ export default function Main () {
         <>
             <Blurb />
             <HomePlayground />
-            <Skills />
             <ProjectsComponent />
+            <Skills />
             <Link to='/resume' style={{textDecoration: 'none'}}><Resume /></Link>
 
 

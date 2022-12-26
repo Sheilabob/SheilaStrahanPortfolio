@@ -51,8 +51,12 @@ export default function Skills() {
                     <p className="skillsetLabel">CSS 3</p>
                 </Col>                
                 <Col>
-                    <img src="/assets/images/jslogo.png" height="50" alt="Javascript"/>
+                    <img src="/assets/images/typescript.svg" height="50" alt="Javascript"/>
                     <p className="skillsetLabel">Javascript</p>
+                </Col>   
+                <Col>
+                    <img src="/assets/images/jslogo.png" height="50" alt="Javascript"/>
+                    <p className="skillsetLabel">Typescript</p>
                 </Col>                
                 <Col>
                     <img src="/assets/images/reactlogo.png" height="50" alt="React"/>
